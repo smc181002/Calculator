@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+
+*{
+    margin: 0px;
+    color: gray;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    background: #f1f1f1;
+    height: 1324px;
+
+}
+
+.disable{
+    display: none;
+}
+
+button{
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 12px;
+}
+
+.bar{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: #f1f1f1;
+    border-bottom: 1px solid rgb(236, 236, 236);
+}
+
+
+button img{
+    width: 30px;
+    height: 30px;
+}
+
+.next{
+    margin-top: 60px;
+}
+
+.soft{
+    justify-content: center;
+    max-width: 100%;
+    margin: 10px;
+    /* padding: 20px; */
+    border-radius:7px;
+    background: #f1f1f1;
+    box-shadow:-7px -7px 21px #ffffff, 7px 7px 21px #e2e2e2;
+    -webkit-border-radius:7px;
+    -moz-border-radius:7px;
+    -ms-border-radius:7px;
+    -o-border-radius:7px;
+}
+
+
+.icons{
+    font-size: 20px;
+    padding: 10px;
+}
+
+div.in{
+    display: inline;
+}
+
+/* .search{
+    /* background-image: url('icon/svgs/solid/search.svg'); 
+    /* justify-content: center; 
+} */
+
+.searchs{
+    position: fixed;
+    width: 50%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+    
+
+input[type=text] {
+    width: 95%;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    padding: 12px 6px;
+    text-align: center;
+}
+
+input[type=text]:focus{
+    /* outline: none; */
+    outline: 1px solid rgb(224, 224, 224);
+    text-align: center;
+
+}
+
+.multi{
+    width: 80%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.other .one{
+    position: absolute;
+    top: 0;
+    padding: 10px;
+    left: 90%;
+    transform: translateX(-85%);
+    margin-top: 10px;
+    /*width: 100px;*/
+}
+.other .two{
+    position: absolute;
+    top: 0;
+    padding: 10px;
+    left: 95%;
+    transform: translateX(-95%);
+    margin-top: 10px;
+    /*width: 100px;*/
+}
+
+.in{
+    padding: 10px;
+}
+
+.option{
+    padding: 30px;
+}
+
+.oneo, .twoo{
+    display: none;
+}
+
+.one, .two, a:visited{
+    color: gray;
+}
+
+@media screen and (max-width:1000px){
+    input[type=text] {
+        width: 90%;
+    }
+
+    .other .one{
+        left: 88%;
+        transform: translate(-88%);
+        -webkit-transform: translate(-88%);
+        -moz-transform: translate(-88%);
+        -ms-transform: translate(-88%);
+        -o-transform: translate(-88%);
+}
+}
+
+@media screen and (max-width:700px){
+    .other .one{
+        left: 86%;
+        transform: translate(-86%);
+        -webkit-transform: translate(-86%);
+        -moz-transform: translate(-86%);
+        -ms-transform: translate(-86%);
+        -o-transform: translate(-86%);
+}
+}
+
+@media screen and (max-width:520px){
+    .other .one, .other .two{
+    display: none;
+    }
+    input[type=text] {
+        width: 85%;
+    }
+    .searchs{
+        position: fixed;
+        width: 70%;
+        top: 0;
+        left: 85%;
+        transform: translateX(-90%);
+        -webkit-transform: translateX(-90%);
+        -moz-transform: translateX(-90%);
+        -ms-transform: translateX(-90%);
+        -o-transform: translateX(-90%);
+    }
+
+    #panel, #flip {
+        padding: 5px;
+        text-align: center;
+    }
+      
+    #panel {
+        margin: 0px;
+        display: none;
+    }
+
+    .disable{
+        display: inline;
+    }
+
+    .oneo,.twoo, a:visited{
+        display: inline-block;
+        color: gray;
+    }
+
+
+    .dis2{
+        display: none;
+    }
+
+}
